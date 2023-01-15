@@ -29,7 +29,7 @@ export function getCoordsFromBrowser() {
 export function getCoordsFromApi() {
   return new Promise((resolve, reject) => {
     axios
-      .get("/geolocation")
+      .get("geolocation")
       .then((res) => {
         const { latitude, longitude } = res.data;
         if (

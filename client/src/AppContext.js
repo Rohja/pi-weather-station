@@ -534,7 +534,7 @@ export function AppContextProvider({ children }) {
   function saveSettingsToJson({ mapsKey, weatherKey, geoKey, lat, lon }) {
     return new Promise((resolve, reject) => {
       axios
-        .put("/settings", {
+        .put("settings", {
           weatherApiKey: weatherKey,
           mapApiKey: mapsKey,
           reverseGeoApiKey: geoKey,

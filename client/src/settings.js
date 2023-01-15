@@ -8,7 +8,7 @@ import axios from "axios";
 export function getSettings() {
   return new Promise((resolve, reject) => {
     axios
-      .get("/settings")
+      .get("settings")
       .then((res) => {
         resolve(res.data);
       })
